@@ -1,0 +1,2 @@
+kubectl set image deploy www-nginx www=nginx:1.14-alpine
+kubectl rollout history deploy www-nginx

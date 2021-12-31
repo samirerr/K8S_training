@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: www-nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: www
+  template:
+    metadata:
+      labels:
+        app: www
+    spec:
+      containers:
+        - name: www
+          image: nginx:1.12
+          ports:
+            - containerPort: 80
