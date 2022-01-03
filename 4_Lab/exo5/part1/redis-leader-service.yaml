@@ -4,7 +4,7 @@ metadata:
   name: redis-leader
 spec:
   selector:
-    app: mongo
+    app: redis
     role: leader
     tier: backend
   ports:

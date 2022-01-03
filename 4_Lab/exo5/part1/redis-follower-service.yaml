@@ -4,7 +4,7 @@ metadata:
   name: redis-follower
 spec:
   selector:
-    app: mongo
+    app: redis
     role: follower
     tier: backend
   ports:
